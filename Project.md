@@ -1,6 +1,7 @@
 # MEAN STACK Implementation
 
 ## Install Nodejs
+
 -Connect to Instance
 `sudo install update`
 `sudo apt upgrade`
@@ -8,14 +9,19 @@
 `sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates`
 `curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -`
 ## Certificate Blocker found
-![Image of certificate Blocker found](cert-blocker.PNG)
+
+![Image of certificate Blocker found](./Images/cert-blocker.png)
+
 -Resolve at 
 [certificate blocker resoltion link](https://github.com/nodesource/distributions/issues/1447)
 -Run
 `sudo curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -`
 `curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -`
-![Image of setup version 16x certifcate "JAMMY"](setup16x-cert.PNG)
+
+![Image of setup version 16x certifcate "JAMMY"](./Images/setup16x-cert.png)
+
 ## Install Node.js 16.x and npm
+
 `sudo apt-get install -y nodejs`
 -Development tools to build native addons
 `sudo apt-get install gcc g++ make`
@@ -24,14 +30,16 @@
 `echo "deb [signed-by=/usr/share/keyrings/yarnkey.gpg] https://dl.yarnpkg.com/debian stable main" | sudo tee /etc/apt/sources.list.d/yarn.list`
 `sudo apt-get update && sudo apt-get install yarn`
 
-![Image of yarn installed](yarn.PNG)
+![Image of yarn installed](./Images/yarn.png)
 
 ## Installing MongoDB
 `sudo apt-get update`
 
 -Install public key
 `wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add -`
-![Image of public key installed](mongo-pubkey.PNG)
+
+![Image of public key installed](./Images/mongo-pubkey.png)
+
 `sudo apt install mongodb-org`
 -Add repository
 `echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/5.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-5.0.list`
@@ -45,11 +53,13 @@
 `echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list`
 
 ## Install npm
+
 `sudo apt install npm`
 `sudo apt install -y npm`
 `sudo npm install body-parser`
 
 ## Create Books directory
+
 `mkdir Books && cd Books`
 `npm init`
 -create server.js file
@@ -67,6 +77,7 @@ app.listen(app.get('port'), function() {
 });
 ---
 ## Install Express Mongoose
+
 `sudo npm install express mongoose`
 -Make directory apps
 `mkdir apps && cd apps`
@@ -111,6 +122,7 @@ module.exports = function(app) {
 };
 ---
 -make directory 
+
 `mkdir models && cd models`
 `vi book.js`
 -insert
